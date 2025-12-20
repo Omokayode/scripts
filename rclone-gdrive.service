@@ -1,0 +1,24 @@
+[Unit]
+Description=Rclone mount for gDriveOmokayj
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/rclone mount gDriveOmokayj: %h/gDriveOmokayj \
+    --vfs-cache-mode full \
+    --vfs-cache-max-size 30G \
+    --vfs-cache-max-age 24h \
+    --cache-dir %h/.cache/rclone_omokayj \
+    --dir-cache-time 72h \
+    --poll-interval 30s \
+    --buffer-size 64M \
+    --transfers 16 \
+    --multi-thread-streams 8 \
+    --umask 022
+ExecStop=/bin/fusermount -u %h/gDriveOmokayj
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
