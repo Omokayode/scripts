@@ -1,0 +1,33 @@
+#guide for syncing zotero across ecosystems (mac and linux)
+#see this resource
+#https://peterfalkingham.com/2025/04/15/setting-up-zotero-with-onedrive-dropbox-google-drive-etc/
+#
+
+
+select cloud storage.
+setup zotero as is on primary machine
+Mac
+>settings> advanced> linkedattachement base dir .
+change the linked dir to the cloud location
+
+Download Zotmoov plugin(xpi file)
+
+>Tools >plugin> add Zotmoov plugin
+Plugin tab should appear in settings
+> change the directory to the linked dir specified earlier
+
+on secondary machine.
+>repeat same process
+
+#watchout
+
+ensure that the file path on linux matches the file path on mac
+
+you can use an fstab entry with bind mounts
+
+sample fstab entry
+#fixing zotero
+#19 December 2025
+/home/omokayj/gDriveOmokayj  /Users/omokayj/Library/CloudStorage/GoogleDrive-omokayodejohn@gmail.com/My\040Drive  none  bind  0  0
+
+

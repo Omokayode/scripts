@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # === CONFIGURATION ===
-REMOTE_NAME="marquetteDrive:"
-MOUNT_POINT="$HOME/marquetteDrive"
-TMUX_SESSION="rclone_marquette"
-CACHE_DIR="$HOME/.cache/rclone_marquette"
+REMOTE_NAME="gDriveOmokayj:"
+MOUNT_POINT="$HOME/gDriveOmokayj"
+TMUX_SESSION="rclone_omokayj"
+CACHE_DIR="$HOME/.cache/rclone_omokayj"
 MAX_CACHE_SIZE="30G"
 
 # === CREATE MOUNT DIRECTORY IF NEEDED ===
