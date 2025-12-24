@@ -1,0 +1,15 @@
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="0522", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
+
+
+#commands
+#create the file
+#sudo vi /etc/udev/rules.d/99-keychron.rules
+#load the file
+#sudo udevadm control --reload-rules
+#sudo udevadm trigger
+# lsusb | grep Keychron
+#Bus 003 Device 011: ID 3434:0522 Keychron Keychron C2 Pro 8K
+#replace the keychron product id if different
+
+
+

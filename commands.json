@@ -1,0 +1,229 @@
+[
+  {
+    "_id": "694679d18cdb13a526818df8",
+    "title": "RGB Profile",
+    "command": "xrandr | grep \" connected\"\n\n\nxrandr --output DP-2-1 --set \"Broadcast RGB\" \"Full\"",
+    "tags": [
+      "color"
+    ],
+    "createdAt": "2025-12-20T10:26:25.883Z",
+    "updatedAt": "2025-12-20T10:26:25.883Z",
+    "__v": 0
+  },
+  {
+    "_id": "6946730f8cdb13a526818df2",
+    "title": "ssh johns-linux",
+    "command": "ssh omokayj@johns-linux",
+    "tags": [
+      "ssh",
+      "johns-linux",
+      "linux"
+    ],
+    "createdAt": "2025-12-20T09:57:35.047Z",
+    "updatedAt": "2025-12-20T09:57:35.047Z",
+    "__v": 0
+  },
+  {
+    "_id": "694672ea8cdb13a526818dee",
+    "title": "ssh oracle",
+    "command": "ssh jkb@umpireampere",
+    "tags": [
+      "oracle",
+      "vm",
+      "ssh"
+    ],
+    "createdAt": "2025-12-20T09:56:58.475Z",
+    "updatedAt": "2025-12-20T09:56:58.475Z",
+    "__v": 0
+  },
+  {
+    "_id": "6945f16d8cdb13a526818de5",
+    "title": "website upgrade",
+    "command": "https://claude.ai/share/46faa66e-c4ca-49a4-a45d-e58d5fbf28a9",
+    "tags": [
+      "claude"
+    ],
+    "createdAt": "2025-12-20T00:44:29.528Z",
+    "updatedAt": "2025-12-20T00:44:52.078Z",
+    "__v": 0
+  },
+  {
+    "_id": "6937a3f337d6846b10af2ddf",
+    "title": "rsync movies",
+    "command": "rsync -av --progress /home/omokayj/Downloads/Movies/ .",
+    "tags": [
+      "rsync",
+      "linux"
+    ],
+    "createdAt": "2025-12-09T04:22:11.853Z",
+    "updatedAt": "2025-12-09T04:22:11.853Z",
+    "__v": 0
+  },
+  {
+    "_id": "6933536837d6846b10af2dd9",
+    "title": "torrent",
+    "command": "https://1337x.to/torrent/2289065/The-Fate-of-the-Furious-2017-1080p-YTS-YIFY/",
+    "tags": [
+      "torrent",
+      "movies"
+    ],
+    "createdAt": "2025-12-05T21:49:28.127Z",
+    "updatedAt": "2025-12-05T21:49:28.127Z",
+    "__v": 0
+  },
+  {
+    "_id": "6932c14b37d6846b10af2dd1",
+    "title": "retrogaming",
+    "command": "https://www.retrostic.com/roms/mame",
+    "tags": [
+      "retropie"
+    ],
+    "createdAt": "2025-12-05T11:26:03.785Z",
+    "updatedAt": "2025-12-05T11:26:03.785Z",
+    "__v": 0
+  },
+  {
+    "_id": "69328e3fa8eda37f39a047e0",
+    "title": "bluetooth via ssh",
+    "command": "bluetoothctl\nscan on\nDevice 14:3A:9A:BE:21:83 DualSense Wireless Controller\npair 14:3A:9A:BE:21:83\ntrust 14:3A:9A:BE:21:83\nconnect 14:3A:9A:BE:21:83\nbluetoothctl devices",
+    "tags": [
+      "bluetooth",
+      "ssh",
+      "raspberrypi"
+    ],
+    "createdAt": "2025-12-05T07:48:15.451Z",
+    "updatedAt": "2025-12-05T07:48:58.845Z",
+    "__v": 0
+  },
+  {
+    "_id": "69328dbfa8eda37f39a047dc",
+    "title": "dualsense controller",
+    "command": "cat /proc/bus/input/devices | grep -i \"wireless\\|sony\\|dual\"",
+    "tags": [
+      "retropie",
+      "raspberrypi"
+    ],
+    "createdAt": "2025-12-05T07:46:07.746Z",
+    "updatedAt": "2025-12-05T07:46:07.746Z",
+    "__v": 0
+  },
+  {
+    "_id": "6930a66f7bdd846a16a4c97e",
+    "title": "salloc",
+    "command": "salloc --x11 --nodes=1 --ntasks=124 --time=48:00:00",
+    "tags": [
+      "HPC",
+      "salloc"
+    ],
+    "createdAt": "2025-12-03T21:06:55.250Z",
+    "updatedAt": "2025-12-03T21:06:55.250Z",
+    "__v": 0
+  },
+  {
+    "_id": "692ffc927bdd846a16a4c973",
+    "title": "git lfs",
+    "command": "git lfs install\ngit lfs track \"*.stl\"\ngit add .gitattributes\ngit add -f *.stl\ngit commit -m \"Add STL using LFS\"\ngit push origin main",
+    "tags": [
+      "git lfs",
+      "git"
+    ],
+    "createdAt": "2025-12-03T09:02:10.344Z",
+    "updatedAt": "2025-12-03T09:02:48.719Z",
+    "__v": 0
+  },
+  {
+    "_id": "692fe18a7bdd846a16a4c967",
+    "title": "tmux detach",
+    "command": "tmux detach -s rclone_marquette",
+    "tags": [
+      "Tmux"
+    ],
+    "createdAt": "2025-12-03T07:06:50.614Z",
+    "updatedAt": "2025-12-03T07:06:50.614Z",
+    "__v": 0
+  },
+  {
+    "_id": "692fac147bdd846a16a4c90b",
+    "title": "Residuals",
+    "command": "foamMonitor -l postProcessing/residuals/0/residuals.dat",
+    "tags": [
+      "OpenFOAM",
+      "postProcessing"
+    ],
+    "createdAt": "2025-12-03T03:18:44.922Z",
+    "updatedAt": "2025-12-03T03:18:44.922Z",
+    "__v": 0
+  },
+  {
+    "_id": "692fabe67bdd846a16a4c907",
+    "title": "Modular solver",
+    "command": "sed 's/incompressibleFluid/porousIncompressibleFluid/g' incompressibleFluid.C\nsed -i 's/incompressibleFluid/porousIncompressibleFluid/g' *.* Make/*\nmv incompressibleFluid.C porousIncompressibleFluid.C\nmv incompressibleFluid.H porou sIncompressibleFluid.H\nrename 's/incompressibleFluid/porousIncompressibleFluid/g' *.* Make/*\n# Also: Rename foamAppBin to foamuserappbin",
+    "tags": [
+      "OpenFOAM",
+      "solver"
+    ],
+    "createdAt": "2025-12-03T03:17:58.885Z",
+    "updatedAt": "2025-12-03T03:18:56.003Z",
+    "__v": 0
+  },
+  {
+    "_id": "692fabac7bdd846a16a4c903",
+    "title": "History search",
+    "command": "case $- in\n    *i*)\n         bind '\\\\e[A': history-search-backward\n         bind '\\\\e[B': history-search-forward\n         stty -echoctl\n         ;;\n      *) ;;\nesac",
+    "tags": [
+      "bash"
+    ],
+    "createdAt": "2025-12-03T03:17:00.640Z",
+    "updatedAt": "2025-12-03T03:17:00.640Z",
+    "__v": 0
+  },
+  {
+    "_id": "692fab4b7bdd846a16a4c8f1",
+    "title": "sbatch dependency",
+    "command": "sbatch --dependency=afterok:803906 run.slurm",
+    "tags": [
+      "slurm",
+      "HPC"
+    ],
+    "createdAt": "2025-12-03T03:15:23.920Z",
+    "updatedAt": "2025-12-03T03:15:23.920Z",
+    "__v": 0
+  },
+  {
+    "_id": "692faab27bdd846a16a4c8ea",
+    "title": "scale STL",
+    "command": "surfaceTransformPoints \"scale=(0.3048 0.3048 0.3048)\" constant/geometry/{name}.stl} constant/geometry/($name}_scale.stl",
+    "tags": [
+      "stl",
+      "OpenFOAM"
+    ],
+    "createdAt": "2025-12-03T03:12:50.948Z",
+    "updatedAt": "2025-12-03T03:19:05.756Z",
+    "__v": 0
+  },
+  {
+    "_id": "692faa077bdd846a16a4c8e4",
+    "title": "Tmux",
+    "command": "tmux attach -t rclone_marquette",
+    "tags": [
+      "Tmux",
+      "bash",
+      "shell"
+    ],
+    "createdAt": "2025-12-03T03:09:59.391Z",
+    "updatedAt": "2025-12-03T07:06:31.121Z",
+    "__v": 0
+  },
+  {
+    "_id": "692fa9ed7bdd846a16a4c8e0",
+    "title": "paraview",
+    "command": "pvserver --force-offscreen-rendering --server-port=11111",
+    "tags": [
+      "OpenFOAM",
+      "paraview"
+    ],
+    "createdAt": "2025-12-03T03:09:33.402Z",
+    "updatedAt": "2025-12-03T03:19:13.178Z",
+    "__v": 0
+  }
+]
