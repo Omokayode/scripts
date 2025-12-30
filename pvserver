@@ -1,0 +1,23 @@
+#using tmux and pvserver
+
+#on local
+
+ssh jomokayode@pangea
+
+# on HPC	
+tmux new -s pvserver
+pvserver --force-offscreen-rendering --server-port=11111
+
+#attach tmux session
+#tmux on local
+tmux attach -t tunnel
+
+
+#tmux on server(HPC)
+tmux attach -t pvserver
+
+ctrl b + d # detach tmux session
+
+#alias to start pvserver using tmux on local
+pv-tunnel='tmux new -d -s tunnel "ssh -N -L 11111:coe-lnx-2392:11111 jomokayode@pangea"'
+
