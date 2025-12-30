@@ -19,5 +19,5 @@ tmux attach -t pvserver
 ctrl b + d # detach tmux session
 
 #alias to start pvserver using tmux on local
-pv-tunnel='tmux new -d -s tunnel "ssh -N -L 11111:coe-lnx-2392:11111 jomokayode@pangea"'
+alias pv-tunnel='tmux new -d -s tunnel "ssh -N -L 11111:coe-lnx-2392:11111 jomokayode@pangea"'
 
