@@ -30,4 +30,22 @@ sample fstab entry
 #19 December 2025
 /home/omokayj/gDriveOmokayj  /Users/omokayj/Library/CloudStorage/GoogleDrive-omokayodejohn@gmail.com/My\040Drive  none  bind  0  0
 
+#on marquette computer
+#install rclone
+#rclone to 
+#create dir
+mkdir /home/omokayj/gDriveOmokayj
+#mount to location
+rclone mount gDriveOmokayj: ~/home/omokayj/gDriveOmokayj
+#create directory 
+mkdir -p /home/MARQNET/7542omokayj/Users/omokayj/Library/CloudStorage/GoogleDrive-omokayodejohn@gmail.com/"My Drive
+#create symbolic link
+ln -s /home/MARQNET/7542omokayj/omokayj/gDriveOmokayj /home/MARQNET/7542omokayj/Users/omokayj/Library/CloudStorage/GoogleDrive-omokayodejohn@gmail.com/"My Drive"
 
+
+#that is it, you can now access linked files
+#however for Zotmoov, you need to ensure the move directory is the same as/home/MARQNET/7542omokayj/Users/omokayj/Library/CloudStorage/GoogleDrive-omokayodejohn@gmail.com/"My Drive
+#
+#but I could not do that on 01072026 since you can only specify dir by choosing the directory and the mount location is different.
+#possibility is to create symlink as the directory on other computers .
+#later!
