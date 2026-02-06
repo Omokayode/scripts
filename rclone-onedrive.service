@@ -11,7 +11,7 @@ ExecStart=/usr/bin/rclone mount marquetteDrive: %h/marquetteDrive \
     --vfs-cache-max-size 30G \
     --vfs-cache-max-age 24h \
     --cache-dir %h/.cache/rclone_marquette \
-    --dir-cache-time 72h \
+    --dir-cache-time 1m \
     --poll-interval 30s \
     --buffer-size 64M \
     --transfers 16 \
