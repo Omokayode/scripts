@@ -7,7 +7,8 @@ SSH_KEY="$HOME/.ssh/awsMEEN6931.pem"
 # Define instances as simple pairs
 INSTANCES=(
     "aws-meen:i-0471d7c1bb57b9300"
-    "secondInstance:i-0e04e21d2a35a3035"  # Uncomment and add real ID
+    "secondInstance:i-0e04e21d2a35a3035"  
+    "thirdInstance:i-0af087353b0d896db"
 )
 
 GREEN='\033[0;32m'
