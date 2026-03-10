@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.rclone.marquetteDrive</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/rclone</string>
+        <string>mount</string>
+        <string>marquetteDrive:</string>
+        <string>/Users/omokayj/marquetteDrive</string>
+        <string>--vfs-cache-mode</string>
+        <string>full</string>
+        <string>--vfs-cache-max-size</string>
+        <string>5G</string>
+        <string>--vfs-cache-max-age</string>
+        <string>1h</string>
+        <string>--cache-dir</string>
+        <string>/Users/omokayj/.cache/rclone_marquette</string>
+        <string>--dir-cache-time</string>
+        <string>1m</string>
+        <string>--poll-interval</string>
+        <string>30s</string>
+        <string>--buffer-size</string>
+        <string>64M</string>
+        <string>--transfers</string>
+        <string>16</string>
+        <string>--multi-thread-streams</string>
+        <string>8</string>
+        <string>--umask</string>
+        <string>022</string>
+        <string>--log-file</string>
+        <string>/Users/omokayj/.cache/rclone_marquette/mount.log</string>
+        <string>--log-level</string>
+        <string>INFO</string>
+    </array>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/omokayj/.cache/rclone_marquette/error.log</string>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/omokayj/.cache/rclone_marquette/output.log</string>
+</dict>
+</plist>
+
