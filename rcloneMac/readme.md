@@ -14,3 +14,9 @@ launchctl load ~/Library/LaunchAgents/com.rclone.marquetteDrive.plist
 
 # To unload later:
 # launchctl unload ~/Library/LaunchAgents/com.rclone.marquetteDrive.plist
+
+# load and unload is deprecated
+
+launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.rclone.marquetteDrive.plist
+
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.rclone.marquetteDrive.plist
